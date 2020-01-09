@@ -1,6 +1,7 @@
 {
-  "name": "Profile Service",
-  "version": "2020-01-09",
+  "name": "profile-service",
+  "repository": "https://github.com/broadinstitute/terra-profile",
+  "version": "2020.01.09",
   "description": "Profile service for Terra.",
   "author": "David Mohs",
   "license": "MIT",
