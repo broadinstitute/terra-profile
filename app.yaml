@@ -1,0 +1,6 @@
+runtime: nodejs10
+service: profile
+
+env_variables:
+  LIVE_CODE_RELOAD: false
+  CONFIG_GCS_URL: gs://broad-shibboleth-prod.appspot.com/configs/config.20200108a.json

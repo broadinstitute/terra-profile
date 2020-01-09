@@ -1,0 +1,16 @@
+{
+  "name": "Profile Service",
+  "version": "2020-01-09",
+  "description": "Profile service for Terra.",
+  "author": "David Mohs",
+  "license": "MIT",
+  "dependencies": {
+    "express": "4.17.1",
+    "jsonwebtoken": "8.5.1",
+    "lodash": "4.17.15",
+    "mysql": "2.17.1"
+  },
+  "scripts": {
+    "start": "export NODE_PATH=/tmp/aelivedev/src:$PWD/src:$PWD/node_modules && node src/index.js"
+  }
+}
