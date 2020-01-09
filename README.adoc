@@ -1,0 +1,3 @@
+= Profile Service
+
+Configuration is at gs://broad-shibboleth-prod.appspot.com/configs.
