@@ -4,3 +4,9 @@ service: profile
 env_variables:
   LIVE_CODE_RELOAD: false
   CONFIG_GCS_URL: gs://broad-shibboleth-prod.appspot.com/configs/config.20200108a.json
+
+handlers:
+- url: /.*
+  secure: always
+  redirect_http_response_code: 301
+  script: auto
