@@ -156,7 +156,7 @@ app.get('/me', withConfig, withAuth, async (req, res) => {
   res.sendJson(ekvdb.toPlain(pairs))
 })
 
-app.post('/shibboleth-token', withAuth, async (req, res) => {
+app.post('/shibboleth-token', withConfig, withAuth, async (req, res) => {
   if (!req.auth.google) return res.sendAuthError();
 
   const shibToken = (await slurpStream(req)).join('')
