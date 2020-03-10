@@ -13,9 +13,9 @@ module.exports = function(crypto, dbOpts) {
   async function getPool() {
     if (!cachedPool) {
       cachedPool = await mysql.createPool({
-        user: 'profile',
+        user: 'shib-profile',
         database: 'thurloe',
-        socketPath: '/cloudsql/broad-dsde-prod:us-central1:thurloe-cloudsql-prod201-905168db8ab5e528',
+        socketPath: `/cloudsql/${dbOpts.instanceConnectionName}`,
         ...dbOpts
       })
     }
