@@ -13,8 +13,8 @@
 .git
 .gitignore
 
-# Node.js dependencies:
-node_modules/
-
-# scripts:
-script/
+#
+# Well-known or obvious.
+#
+/node_modules/
+/script/
