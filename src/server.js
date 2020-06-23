@@ -1,3 +1,4 @@
+const cors = require('cors')
 const express = require('express')
 const fs = require('fs').promises
 const http = require('http')
@@ -33,6 +34,8 @@ function maybeParseJson(s) {
 }
 
 const app = express()
+
+app.use(cors())
 
 app.use((req, res, next) => {
   res.sendJson = (x) => {
