@@ -242,8 +242,7 @@ function postShibbolethToken(envName) {
     }
 
     const sub = req.auth.google.sub
-    const payloadUsername = envName === 'dev' ?
-      payload['fake-era-commons-username'] : payload['eraCommonsUsername']
+    const payloadUsername = payload['eraCommonsUsername']
     const pairs = await ekvdb.getPairs(sub)
     await ekvdb.setValue(sub, pairs, 'linkedNihUsername', payloadUsername)
     const thirtyDaysInSeconds = 60 * 60 * 24 * 30
